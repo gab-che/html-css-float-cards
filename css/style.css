@@ -25,7 +25,10 @@ header h1{
 
 .small-container{
     width: 100%;
+    /* Bordo da togliere */
     border: 1px solid black;
+    color: white;
+
 }
 
 .small-container::after{
@@ -44,9 +47,33 @@ header h1{
 
 .card{
     float: left;
-    /* Altezza forzata da togliere */
-    height: 200px;
     width: calc((100% / 3) - ((2rem * 2) / 3));
-    background-color: aquamarine;
-    border: 1px solid black;
+    background-color: #0f0e17;
+}
+
+.card img{
+    width: 30%;
+}
+
+.card img,
+.card .description{
+    vertical-align: middle;
+}
+
+.card .description{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.description h4,
+.description p:first-of-type{
+    margin-bottom: 5px;
+}
+
+.description p{
+    font-size: 0.9rem;
+}
+
+.description p:last-of-type{
+    color: #52b3e5;
 }
